@@ -30,6 +30,9 @@ public class VarastoTest {
     public void negatiivinenTilavuus() {
         varasto = new Varasto(-5, 5);
         assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
+
+        varasto = new Varasto(-5);
+        assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
